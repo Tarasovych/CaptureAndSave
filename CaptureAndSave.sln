@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaptureAndSave", "CaptureAndSave\CaptureAndSave.csproj", "{814E2D48-2604-4356-BFCB-1A71BDD4A1F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{814E2D48-2604-4356-BFCB-1A71BDD4A1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814E2D48-2604-4356-BFCB-1A71BDD4A1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814E2D48-2604-4356-BFCB-1A71BDD4A1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814E2D48-2604-4356-BFCB-1A71BDD4A1F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE005B8B-D818-46DB-B1EA-2F072969EC7A}
+	EndGlobalSection
+EndGlobal
