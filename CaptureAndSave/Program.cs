@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Imaging;
-using System.Threading;
 
 namespace CaptureAndSave
 {
@@ -22,10 +21,17 @@ namespace CaptureAndSave
                         {
                             g.CopyFromScreen(0, 0, 0, 0, bitmap.Size);
                         }
-                        Console.WriteLine("saving the image...");
-                        string name = DateTimeOffset.Now.ToUnixTimeSeconds().ToString();
-                        bitmap.Save(AppDomain.CurrentDomain.BaseDirectory + "\\" + name + ".jpg", ImageFormat.Jpeg);
-                        Console.WriteLine(name + ".jpg has been saved");
+                        Console.WriteLine("saving the image");
+
+                        string filePath = AppDomain.CurrentDomain.BaseDirectory + "\\img\\";
+
+                        System.IO.FileInfo file = new System.IO.FileInfo(filePath);
+                        file.Directory.Create();
+
+                        string name = DateTimeOffset.Now.ToUnixTimeSeconds().ToString()+".jpg";
+                        bitmap.Save(filePath + name, ImageFormat.Jpeg);
+                        Console.WriteLine(name + " has been saved");
+                        Console.WriteLine();
                     }
             }
         }
